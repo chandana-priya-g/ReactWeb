@@ -1,0 +1,62 @@
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .intro-component {
+    grid-column: 1;
+    margin-top: 10%;
+  }
+  
+  .intro-component h1 {
+    color: #F4CE14;
+  }
+  
+  .intro-component h2 {
+    color: #FFFFFF;
+  }
+  
+  .intro-component p {
+    margin-top: 1.25rem;
+    color: #FFFFFF;
+  }
+  
+  .intro-component input {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+  
+  .intro-component input:hover, 
+  .intro-component input:focus {
+    border-color: #F4CE14;
+  }
+  
+  .logo-image {
+    grid-column: 2;
+    width: 50%;
+    height: 22rem;
+    justify-self: center;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-top: 10%;
+  }
+  
+  /*-- Media queries ------------------------------------------------------*/
+  
+  @media (max-width: 960px) {
+    .logo-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  .logo-information {
+    grid-row: 1;
+  }
+  
+  .logo-image {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  }
+  
